@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>To Do</title>
+</head>
+<body>
+    <a href="http://localhost:3000/add">
+        <div class="add-button"><i class="fa fa-plus"></i>
+        </div>
+    </a>
+
+    <h1 class="title">To-Do WebApp</h1>
+    <% if (locals.notes) { %>
+    <div class="grid">
+        <% for (let subject in notes) {%>
+            <div class="note-card">
+                <h1 class="subject"><%= subject %></h1>
+                <p class="note">
+                <%= notes[subject] %>
+                </p>
+                <a href="http://localhost:3000/delete/<%= subject %>">
+                    <div class="remove-button"><i class="fa fa-trash"></i>
+                    </div>
+                </a>
+            </div>
+        <% } %>
+    </div>
+    <% } %>
+  </body>
+</body>
+</html>

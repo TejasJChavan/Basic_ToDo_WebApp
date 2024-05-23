@@ -1,0 +1,81 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.add-button {
+    all: unset;
+    position:fixed;
+    background-color: #A5C9CA;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 5%;
+    right:3%;
+    font-size:50px;
+}
+
+.fa-plus {
+    color: #2C3333;
+    margin-top:25px;
+}
+
+.fa-trash {
+    color: #2C3333;
+}
+
+.remove-button {
+    position: absolute;
+    right:8%;
+    bottom:10%;
+}
+
+.new {
+    padding-top:40px;
+}
+
+body {
+    background-color: #2C3333;
+    text-align: center;
+}
+.title {
+    display:inline-block;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #A5C9CA;
+    font-size:50px;
+    padding:60px;
+}
+
+.grid {
+    display: grid;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: stretch;
+    padding: 100px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px)); /* Adjusted grid columns */
+    grid-template-rows: auto;
+    gap: 130px;
+}
+
+.note-card {
+    position: relative;
+    text-align: start;
+    height: auto;
+    max-width: 400px;
+    align-self: center;
+    padding: 40px;
+    border:  10px solid #A5C9CA;
+    background-color: #E7F6F2;
+    border-radius: 35px;
+}
+
+.subject {
+    font-family: "Recursive", sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.note {
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
